@@ -7,6 +7,7 @@ public class ObjectMovRot : MonoBehaviour
     private bool dragging = false;
     private Vector3 offset;
     [HideInInspector] internal bool isPlacing = false;
+    [SerializeField] internal bool canMove = true;
     
     [Header("Rotation Settings")]
     [SerializeField] private bool snapRotation = true;
@@ -28,7 +29,7 @@ public class ObjectMovRot : MonoBehaviour
         //    snapTimer -= Time.deltaTime;
 
 
-        if (isPlacing)
+        if (isPlacing && canMove)
         {
             dragging = true;
             Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);

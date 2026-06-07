@@ -10,6 +10,14 @@ public class ObjectPlaceButton : MonoBehaviour
 
     public void IndexPlacing()
     {
-        levelManager.PlaceObject(itemPrefabIndex, myButtonRect);
+        if (gameObject.CompareTag("BirdButton"))
+        {
+            //Debug.Log("Bird button clicked");
+            levelManager.PlaceBirdInLocation(itemPrefabIndex);
+        }
+        else
+        {
+            levelManager.PlaceObject(itemPrefabIndex, myButtonRect);
+        }
     }
 }

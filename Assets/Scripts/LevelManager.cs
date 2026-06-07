@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("Available Objects to Place")]
     [SerializeField] private GameObject[] placeablePrefabs;
+    [SerializeField] private GameObject[] birdPlaceLocation;
 
     [Header("Save Settings")]
     private string saveFileFolderName = "saves";
@@ -88,6 +89,45 @@ public class LevelManager : MonoBehaviour
             }
         }
         Debug.Log("Normal level start.");
+    }
+
+    public void PlaceBirdInLocation(int prefabIndex)
+    {
+        if (prefabIndex < 0 || prefabIndex >= placeablePrefabs.Length) return;
+
+        for (int i = 0; i < birdPlaceLocation.Length; i++)
+        {
+            //Vector3 spawnPos = birdPlaceLocation[i].transform.position;
+
+            Transform slot = birdPlaceLocation[i].transform;
+
+            if (slot.childCount == 0)
+            {
+                Vector3 spawnPos = slot.position;
+
+                GameObject obj = Instantiate(placeablePrefabs[prefabIndex], spawnPos, Quaternion.identity);
+                obj.transform.localScale = Vector3.one * 0.25f;
+
+                obj.transform.SetParent(slot);
+
+                placedObjects.Add(obj);
+                GetPlacedObjScripts();
+
+                var mov = obj.GetComponent<ObjectMovRot>();
+                mov.isPlacing = false;
+                mov.canMove = false;
+
+                var bird = obj.GetComponent<Bird>();
+                if (bird != null)
+                {
+                    bird.birdOrder = birdOrder;
+                    birdOrder++;
+                }
+
+                // IMPORTANT: stop after placing ONE bird
+                break;
+            }
+        }
     }
 
     public void PlaceObject(int prefabIndex, RectTransform uiButtonRect)
