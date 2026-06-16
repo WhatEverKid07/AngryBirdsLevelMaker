@@ -3,23 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\leveldatascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\leveldatascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\scripts\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\assets\\scripts\\customlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\scripts\\customlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\customlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\scripts\\objectmovrot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectmovrot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|c:\\users\\eugen\\documents\\github\\angrybirdslevelmaker\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0F50DC7-5B59-166B-AA01-BC321B88FDC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,33 +30,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LevelDataScript.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\LevelDataScript.cs",
-              "RelativeDocumentMoniker": "Assets\\LevelDataScript.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\LevelDataScript.cs",
-              "RelativeToolTip": "Assets\\LevelDataScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T15:32:53.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Bird.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\Bird.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Bird.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\Bird.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Bird.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAAkwBsAAAArAAAAAAAAAA==",
+              "Title": "ObjectMovRot.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\ObjectMovRot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectMovRot.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\ObjectMovRot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectMovRot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T15:26:22.465Z",
+              "WhenOpened": "2026-06-06T20:44:53.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CustomLevelManager.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\CustomLevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CustomLevelManager.cs",
@@ -73,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -92,7 +75,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
               "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\AngryBirdsLevelMaker\\Assets\\Scripts\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAqwLMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T18:06:46.66Z",
               "EditorCaption": ""

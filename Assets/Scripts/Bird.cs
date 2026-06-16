@@ -26,6 +26,7 @@ public class Bird : MonoBehaviour
     
     [SerializeField] public int birdType;
     [SerializeField] internal int birdOrder;
+    [SerializeField] internal int slotIndex;
 
     [SerializeField] private GameObject bombParticlePrefab;
     [SerializeField] private GameObject collideParticlePrefab;
@@ -78,6 +79,7 @@ public class Bird : MonoBehaviour
 
     [SerializeField] private bool bird_Is_Active = false;
     public ObjectMovRot objMoveRot;
+
 
     private void Start()
     {

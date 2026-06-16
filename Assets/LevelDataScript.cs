@@ -8,7 +8,8 @@ public class LevelObjectData
     public string prefabName;
     public Vector3 position;
     public Quaternion rotation;
-    public int birdOrder;
+    public int birdOrder = -1;
+    public int slotIndex = -1;
 }
 
 [Serializable]

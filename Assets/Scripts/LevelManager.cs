@@ -91,27 +91,84 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Normal level start.");
     }
 
+    //public void PlaceBirdInLocation(int prefabIndex)
+    //{
+    //    if (prefabIndex < 0 || prefabIndex >= placeablePrefabs.Length) return;
+
+    //    for (int i = 0; i < birdPlaceLocation.Length; i++)
+    //    {
+    //        //Vector3 spawnPos = birdPlaceLocation[i].transform.position;
+
+    //        Transform slot = birdPlaceLocation[i].transform;
+
+
+    //        if (slot.childCount == 0)
+    //        {
+    //            Vector3 spawnPos = slot.position;
+
+    //            GameObject obj = Instantiate(placeablePrefabs[prefabIndex], spawnPos, Quaternion.identity);
+    //            obj.transform.localScale = Vector3.one * 0.25f;
+
+    //            obj.transform.SetParent(slot);
+
+    //            placedObjects.Add(obj);
+    //            GetPlacedObjScripts();
+
+    //            var mov = obj.GetComponent<ObjectMovRot>();
+    //            mov.isPlacing = false;
+    //            mov.canMove = false;
+
+    //            var bird = obj.GetComponent<Bird>();
+    //            if (bird != null)
+    //            {
+    //                bird.birdOrder = birdOrder;
+    //                bird.slotIndex = i;
+    //                birdOrder++;
+    //            }
+
+    //            // IMPORTANT: stop after placing ONE bird
+    //            break;
+    //        }
+    //    }
+    //}
+
     public void PlaceBirdInLocation(int prefabIndex)
     {
-        if (prefabIndex < 0 || prefabIndex >= placeablePrefabs.Length) return;
+        if (prefabIndex < 0 || prefabIndex >= placeablePrefabs.Length)
+            return;
 
         for (int i = 0; i < birdPlaceLocation.Length; i++)
         {
-            //Vector3 spawnPos = birdPlaceLocation[i].transform.position;
+            bool slotOccupied = false;
 
-            Transform slot = birdPlaceLocation[i].transform;
-
-            if (slot.childCount == 0)
+            // Check all placed birds
+            foreach (GameObject placedObj in placedObjects)
             {
-                Vector3 spawnPos = slot.position;
+                if (placedObj == null)
+                    continue;
 
-                GameObject obj = Instantiate(placeablePrefabs[prefabIndex], spawnPos, Quaternion.identity);
+                Bird existingBird = placedObj.GetComponent<Bird>();
+
+                if (existingBird != null && existingBird.slotIndex == i)
+                {
+                    slotOccupied = true;
+                    break;
+                }
+            }
+
+            if (!slotOccupied)
+            {
+                Transform slot = birdPlaceLocation[i].transform;
+
+                GameObject obj = Instantiate(
+                    placeablePrefabs[prefabIndex],
+                    slot.position,
+                    Quaternion.identity);
+
                 obj.transform.localScale = Vector3.one * 0.25f;
-
                 obj.transform.SetParent(slot);
 
                 placedObjects.Add(obj);
-                GetPlacedObjScripts();
 
                 var mov = obj.GetComponent<ObjectMovRot>();
                 mov.isPlacing = false;
@@ -120,14 +177,17 @@ public class LevelManager : MonoBehaviour
                 var bird = obj.GetComponent<Bird>();
                 if (bird != null)
                 {
-                    bird.birdOrder = birdOrder;
-                    birdOrder++;
+                    bird.birdOrder = i;
+                    bird.slotIndex = i;
+                    //birdOrder++;
                 }
 
-                // IMPORTANT: stop after placing ONE bird
-                break;
+                GetPlacedObjScripts();
+                return;
             }
         }
+
+        Debug.LogWarning("No free bird slots available.");
     }
 
     public void PlaceObject(int prefabIndex, RectTransform uiButtonRect)
@@ -242,10 +302,14 @@ public class LevelManager : MonoBehaviour
             objData.position = obj.transform.position;
             objData.rotation = obj.transform.rotation;
 
+            objData.birdOrder = -1;
+            objData.slotIndex = -1;
+
             Bird bird = obj.GetComponent<Bird>();
             if (bird != null)
             {
                 objData.birdOrder = bird.birdOrder;
+                objData.slotIndex = bird.slotIndex;
             }
 
             data.objects.Add(objData);
@@ -378,7 +442,17 @@ public class LevelManager : MonoBehaviour
                 if (bird != null)
                 {
                     bird.birdOrder = objData.birdOrder;
+                    bird.slotIndex = objData.slotIndex;
                     birdOrder++;
+
+                    int highestOrder = -1;
+
+                    if (bird.birdOrder > highestOrder)
+                    {
+                        highestOrder = bird.birdOrder;
+                    }
+
+                    birdOrder = highestOrder + 1;
                 }
 
                 placedObjects.Add(obj);
@@ -420,6 +494,7 @@ public class LevelManager : MonoBehaviour
             if (bird != null)
             {
                 objData.birdOrder = bird.birdOrder;
+                objData.slotIndex = bird.slotIndex;
             }
 
             data.objects.Add(objData);
@@ -465,6 +540,16 @@ public class LevelManager : MonoBehaviour
                 {
                     bird.birdOrder = objData.birdOrder;
                     //birdOrder++;
+                    bird.slotIndex = objData.slotIndex;
+
+                    int highestOrder = -1;
+
+                    if (bird.birdOrder > highestOrder)
+                    {
+                        highestOrder = bird.birdOrder;
+                    }
+
+                    birdOrder = highestOrder + 1;
                 }
 
                 placedObjects.Add(obj);
