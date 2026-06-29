@@ -28,7 +28,6 @@ public class Brick : MonoBehaviour
     // 1 glass
     // 2 stone
 
-    [HideInInspector]
     public float currentHealth;
     [HideInInspector]
     public SpriteRenderer spriteRenderer;

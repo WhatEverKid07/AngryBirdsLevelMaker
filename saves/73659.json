@@ -1,0 +1,172 @@
+{
+    "objects": [
+        {
+            "prefabName": "ForemanPig",
+            "position": {
+                "x": -11.37568473815918,
+                "y": -1.7955896854400635,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "bomb",
+            "position": {
+                "x": -32.16875457763672,
+                "y": -2.056687831878662,
+                "z": 1.0441604852676392
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": 0,
+            "slotIndex": 0
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -23.43450927734375,
+                "y": -2.2367656230926515,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -22.5766658782959,
+                "y": -2.26127552986145,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -21.694313049316408,
+                "y": -2.310295343399048,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -20.811960220336915,
+                "y": -2.3348052501678469,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -19.929607391357423,
+                "y": -2.285785436630249,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -19.09627342224121,
+                "y": -2.3348052501678469,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -18.23843002319336,
+                "y": -2.3593146800994875,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        },
+        {
+            "prefabName": "rockRE1",
+            "position": {
+                "x": -17.380586624145509,
+                "y": -2.3348052501678469,
+                "z": 0.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "birdOrder": -1,
+            "slotIndex": -1
+        }
+    ],
+    "icons": [
+        {
+            "placeholderIndex": 0,
+            "iconName": "NewLevel_1",
+            "levelID": "73659"
+        }
+    ],
+    "levelName": "NewLevel_1"
+}

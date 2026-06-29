@@ -204,7 +204,7 @@ public class Bird : MonoBehaviour
         if (birdType == 2 && Input.GetMouseButtonDown(0) && Collided == false && State == BirdState.Thrown && Boosted == false && !blueActivated) blues();
 
         // bomb
-        if (birdType == 3 && State == BirdState.Thrown && Boosted == false && Input.GetMouseButtonDown(0)) StartCoroutine(ExplosionDamage(2f, 6000f));
+        if (birdType == 3 && State == BirdState.Thrown && Boosted == false && Input.GetMouseButtonDown(0)) StartCoroutine(ExplosionDamage(2f, 6000f, true));
 
         // matilda
         if (birdType == 4 && Input.GetMouseButtonDown(0) && Collided == false && State == BirdState.Thrown && Boosted == false) matilda();
@@ -310,7 +310,7 @@ public class Bird : MonoBehaviour
         {
             if (collision.gameObject.tag == "Brick" || collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pig" && Thrown)
             {
-                StartCoroutine(ExplosionDamage(2f, 6000f));
+                StartCoroutine(ExplosionDamage(2f, 6000f, false));
             }
             rb.gravityScale = 0.5f;
 
@@ -436,65 +436,58 @@ public class Bird : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator ExplosionDamage(float radius, float force)
+    private IEnumerator ExplosionDamage(float radius, float force, bool instant)
     {
-        if (Boosted == false)
-        {
-            Boosted = true;
+        if (Boosted) yield break;
 
+        Boosted = true;
+
+        if (!instant)
+        {
             foreach (Sprite sprite in spriteListBoost)
             {
                 spriteRenderer.sprite = sprite;
-
                 yield return new WaitForSeconds(0.6f);
             }
-            Vector2 center = gameObject.transform.position;
+        }
+        Vector2 center = gameObject.transform.position;
 
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
 
-            foreach (var hitCollider in hitColliders)
+        foreach (var hitCollider in hitColliders)
+        {
+            float distance = Vector2.Distance(hitCollider.gameObject.transform.position, gameObject.transform.position);
+
+            if (hitCollider.gameObject.tag == "Pig")
             {
-
-                float distance = Vector2.Distance(hitCollider.gameObject.transform.position, gameObject.transform.position);
-
-                if (hitCollider.gameObject.tag == "Pig")
+                Destroy(hitCollider.gameObject);
+                if (rb != null)
                 {
-                    Destroy(hitCollider.gameObject);
-                    if (rb != null)
-                    {
-                        //Rigidbody2DExtension.AddExplosionForce(hitCollider.GetComponent<Rigidbody2D>(), force, gameObject.transform.position, radius + 2f);
-                    }
-                }
-                if (hitCollider.gameObject.tag == "Brick")
-                {
-                    hitCollider.gameObject.GetComponent<Brick>().currentHealth = hitCollider.gameObject.GetComponent<Brick>().currentHealth - (200 - (distance * 100));
-                    if (rb != null)
-                    {
-                        Rigidbody2DExtension.AddExplosionForce(hitCollider.GetComponent<Rigidbody2D>(), force - (distance * 1000), gameObject.transform.position, radius + 4f);
-                    }
+                    //Rigidbody2DExtension.AddExplosionForce(hitCollider.GetComponent<Rigidbody2D>(), force, gameObject.transform.position, radius + 2f);
                 }
             }
-            //AudioPlayer.audio.PlayOneShot(soundListBoost[0]);
-            GameObject bombParticleObject = Instantiate(bombParticlePrefab, transform.position, transform.rotation);
-            bombParticleObject.GetComponent<ParticleSystem>().Play();
-            Destroy(bombParticleObject, 1f);
-
-            GameObject explosionParticleObject = Instantiate(bombExplosionParticlePrefab, transform.position, transform.rotation);
-            explosionParticleObject.GetComponent<ParticleSystem>().Play();
-            Destroy(explosionParticleObject, 1f);
-
-
-            Destroy(gameObject);
+            if (hitCollider.gameObject.tag == "Brick")
+            {
+                hitCollider.gameObject.GetComponent<Brick>().currentHealth = hitCollider.gameObject.GetComponent<Brick>().currentHealth - (200 - (distance * 100));
+                if (rb != null)
+                {
+                    Rigidbody2DExtension.AddExplosionForce(hitCollider.GetComponent<Rigidbody2D>(), force - (distance * 1000), gameObject.transform.position, radius + 4f);
+                }
+            }
         }
+        //AudioPlayer.audio.PlayOneShot(soundListBoost[0]);
+        GameObject bombParticleObject = Instantiate(bombParticlePrefab, transform.position, transform.rotation);
+        bombParticleObject.GetComponent<ParticleSystem>().Play();
+        Destroy(bombParticleObject, 1f);
+
+        GameObject explosionParticleObject = Instantiate(bombExplosionParticlePrefab, transform.position, transform.rotation);
+        explosionParticleObject.GetComponent<ParticleSystem>().Play();
+        Destroy(explosionParticleObject, 1f);
+
+
+        Destroy(gameObject);
+
     }
-
-
-
-
-
-
-
-
 
     public BirdState State
     {

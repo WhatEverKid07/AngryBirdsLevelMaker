@@ -9,24 +9,29 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float panSpeed = 5f;
 
     [Header("Bounds")]
-    [SerializeField] private float minX = -10f;
-    [SerializeField] private float maxX = 10f;
-    [SerializeField] private float minY = -5f;
-    [SerializeField] private float maxY = 5f;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
+    [SerializeField] private float minY;
+    [SerializeField] private float maxY;
 
     
     [Header("Zoom Settings")]
-    private Camera Cam;
+    private Camera cam;
     [SerializeField] private float zoomSpeed = 5f;
+    [SerializeField] private float smoothTime = 0.25f;
     [SerializeField] private float minZoom;
     [SerializeField] private float maxZoom;
+    [SerializeField] private float zoom;
     
 
     private Vector3 dragOrigin;
 
     private void Start()
     {
-        //Cam = Camera.main;
+        cam = Camera.main;
+        zoom = cam.orthographicSize;
+        minZoom = cam.orthographicSize;
+        maxZoom = cam.orthographicSize / 10f;
         //Zoom = Cam.orthographicSize;
     }
     void Update()
@@ -46,13 +51,11 @@ public class CameraController : MonoBehaviour
                 transform.position.z
             );
         }
-        /*
-        float scroll = Input.GetAxis("Mouse ScrollWheel"); // scroll input
-        if (scroll != 0.0f)
-        {
-            float newSize = Cam.orthographicSize - scroll * zoomSpeed;
-            Cam.orthographicSize = Mathf.Clamp(newSize, minZoom, maxZoom);
-        }
-        */
+        
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        zoom -= scroll * zoomSpeed;
+        zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
+        cam.orthographicSize = zoom;
+        //cam.orthographicSize = Mathf.SmoothDamp(zoom, ref zoomSpeed);
     }
 }

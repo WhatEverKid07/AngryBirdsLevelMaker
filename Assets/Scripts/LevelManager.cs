@@ -160,13 +160,10 @@ public class LevelManager : MonoBehaviour
             {
                 Transform slot = birdPlaceLocation[i].transform;
 
-                GameObject obj = Instantiate(
-                    placeablePrefabs[prefabIndex],
-                    slot.position,
-                    Quaternion.identity);
+                GameObject obj = Instantiate(placeablePrefabs[prefabIndex], slot.position, Quaternion.identity);
 
-                obj.transform.localScale = Vector3.one * 0.25f;
-                obj.transform.SetParent(slot);
+                //obj.transform.localScale = Vector3.one * 0.25f;
+                //obj.transform.SetParent(slot);
 
                 placedObjects.Add(obj);
 
@@ -441,6 +438,10 @@ public class LevelManager : MonoBehaviour
                 Bird bird = obj.GetComponent<Bird>();
                 if (bird != null)
                 {
+                    var mov = obj.GetComponent<ObjectMovRot>();
+                    mov.isPlacing = false;
+                    mov.canMove = false;
+
                     bird.birdOrder = objData.birdOrder;
                     bird.slotIndex = objData.slotIndex;
                     birdOrder++;
@@ -538,6 +539,10 @@ public class LevelManager : MonoBehaviour
                 Bird bird = obj.GetComponent<Bird>();
                 if (bird != null)
                 {
+                    var mov = obj.GetComponent<ObjectMovRot>();
+                    mov.isPlacing = false;
+                    mov.canMove = false;
+
                     bird.birdOrder = objData.birdOrder;
                     //birdOrder++;
                     bird.slotIndex = objData.slotIndex;
