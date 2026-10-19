@@ -14,10 +14,6 @@ This is a custom level maker that I created, with assets from the base game as t
 
 ## Basic Controls
 
-- Click & Drag to place/move any object.
+- Left Click & Drag to place/move any object.
 - Right click any object to delete it.
-- Scroll wheel on an object to rotate it.
-
-## Future
-
-I hope to be able to add many more blocks, birds and pigs, along with the addition of themes, and possible small quality of life features.
+- Scroll wheel whilst holding an object to rotate it.
