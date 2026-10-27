@@ -1,0 +1,551 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-eugen doesn't exist
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eugen-6000.6.7" at "2026-10-27T21:53:25.9151239Z"
+Built from '6000.6/staging' branch; Version is '6000.6.7f1 (b22767f04f04) revision 11675495'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 31861 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-27T21:53:25Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 21752, path: "V:/Unity/6000.6.7f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              5bc0142d78874daca5ae38c85794e9ba
+  Correlation Id:          e4d3ce14b5f3baad150a937d4f9e06c5
+  External correlation Id: 8715772742213213478
+  Machine Id:              8d7we1bbcQZGHIyYoPxuhPDiZiw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eugen-6000.6.7" (connect: 0.00s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eugen-6000.6.7-notifications" at "2026-10-27T21:53:25.9741395Z"
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+V:\Unity\6000.6.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorkerHW3
+-projectPath
+C:/Users/eugen/Documents/GitHub/AngryBirdsLevelMaker
+-logFile
+Logs/AssetImportWorkerHW3.log
+-srvPort
+53441
+-parentPid
+37684
+-analyticsCloudUserId
+20066490582261
+-analyticsLocalProjectId
+78545557e633ff748938e067b48a7069
+-editorAnalyticsEnabled
+1
+-cbmEditorLicense
+8043d6b64ba3c8e562b4019bb2af871da8c40eb6
+-cbmMachineId
+8d7we1bbcQZGHIyYoPxuhPDiZiw=
+-licensingIpc
+LicenseClient-eugen
+-noDiagnosticSwitchPersistentStore
+-job-worker-count
+11
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+-force-d3d12
+-name
+AssetImport
+Successfully changed project path to: C:/Users/eugen/Documents/GitHub/AngryBirdsLevelMaker
+C:/Users/eugen/Documents/GitHub/AngryBirdsLevelMaker
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [45640]  Target information:
+
+Player connection [45640]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 916752065 [EditorId] 916752065 [Version] 1048832 [Id] WindowsEditor(7,NASA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45640]  * "[IP] 192.168.1.125 [Port] 0 [Flags] 2 [Guid] 916752065 [EditorId] 916752065 [Version] 1048832 [Id] WindowsEditor(7,NASA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45640] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45640] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: d3d3d5f67f0d46ca4d5fd129c1995d4c
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: true
+  - Service working directory: Library/DataStore/
+Refreshing native plugins compatible for Editor in 28.42 ms, found 5 plugins.
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.7f1 (b22767f04f04)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=262144, entitiesPerBlock=1024, blocksPerSlotPage=0, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path V:/Unity/6000.6.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/eugen/Documents/GitHub/AngryBirdsLevelMaker/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        AMD Radeon RX 7900 GRE (ID=0x744c)
+    Vendor:          ATI
+    VRAM:            16368 MB
+    App VRAM Budget: 15553 MB
+    Driver:          32.0.21030.2001
+Initialize mono
+Mono path[0] = 'V:/Unity/6000.6.7f1/Editor/Data/Managed'
+Mono path[1] = 'V:/Unity/6000.6.7f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'V:/Unity/6000.6.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'V:/Unity/6000.6.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 20067668545545-whateverkid07-UnityProStuXXXX
+  Product: Unity Student
+  Type: Assigned
+  Expiration: 2027-10-23T08:58:20Z
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/VisionOSPlayer/UnityEditor.VisionOS.Extensions.dll
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.007909 seconds.
+Native extension for LinuxStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Failed to load: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/VisionOSPlayer\x64\UnityEditor.VisionOS.Native.dll
+Native extension for VisionOS target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.528 seconds
+Domain Reload Profiling: 988ms
+	BeginReloadAssembly (120ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (265ms)
+		LoadAssemblies (121ms)
+		TypeCache.Refresh (174ms)
+			TypeCache.ScanAssembly (163ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (529ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (109ms)
+			ProcessInitializeOnLoadMethodAttributes (208ms)
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Begin MonoManager ReloadAssembly
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.Scripting.ScriptCompilation.PrecompiledAssemblyProviderBase:GetAllPrecompiledAssembliesInternal ()
+UnityEditor.Scripting.ScriptCompilation.PrecompiledAssemblyProvider:GetAllPrecompiledAssemblies ()
+UnityEditor.AssemblyValidation:CheckAssemblyReferences (string[],UnityEditor.AssemblyValidation/Error[],Mono.Cecil.AssemblyDefinition[])
+UnityEditor.AssemblyValidation:ValidateAssemblyDefinitions (string[],Mono.Cecil.AssemblyDefinition[])
+UnityEditor.AssemblyValidation:ValidateAssemblies (string[],bool)
+
+[C:\build\output\unity\unity\Runtime\Serialize\TransferFunctions\TextDOMTransferReadBase.h line 180]
+
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.Scripting.ScriptCompilation.PrecompiledAssemblyProviderBase:GetAllPrecompiledAssembliesInternal ()
+UnityEditor.Scripting.ScriptCompilation.PrecompiledAssemblyProvider:GetAllPrecompiledAssemblies ()
+UnityEditor.AssemblyValidation:CheckAssemblyReferences (string[],UnityEditor.AssemblyValidation/Error[],Mono.Cecil.AssemblyDefinition[])
+UnityEditor.AssemblyValidation:ValidateAssemblyDefinitions (string[],Mono.Cecil.AssemblyDefinition[])
+UnityEditor.AssemblyValidation:ValidateAssemblies (string[],bool)
+
+[C:\build\output\unity\unity\Runtime\Serialize\TransferFunctions\TextDOMTransferReadBase.h line 180]
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Serialized file "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Serialized file "Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" contains a PluginImporter object at version 1, below the supported minimum (2). Open and re-save the file to upgrade.
+Refreshing native plugins compatible for Editor in 23.44 ms, found 5 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Failed to load: V:/Unity/6000.6.7f1/Editor/Data/PlaybackEngines/VisionOSPlayer\x64\UnityEditor.VisionOS.Native.dll
+Native extension for VisionOS target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.237 seconds
+Domain Reload Profiling: 2535ms
+	BeginReloadAssembly (198ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (995ms)
+		LoadAssemblies (652ms)
+		TypeCache.Refresh (168ms)
+			TypeCache.ScanAssembly (151ms)
+		AnalyzeDomain (79ms)
+			BuildScriptInfoCaches (72ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1238ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (823ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+AcceleratorClientConnectionCallback - disconnected - :0
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 28.39 ms, found 5 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7831 unused Assets / (3.0 MB). Loaded Objects now: 8571.
+Memory consumption went from 369.9 MB to 366.8 MB.
+Total: 23.675100 ms (FindLiveObjects: 1.113800 ms CreateObjectMapping: 0.910200 ms MarkObjects: 20.360100 ms  DeleteObjects: 1.143900 ms)
+
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:33.4304874Z
+  Time since last request: 11211.05486430000019 seconds.
+  importAddress: GUID: 74e3cf8cb145428458bf946fe5f5b318 - Path: Assets/Sprites/Menu/LEVELSELECTION_SHEET_PC_2.png - Importer: PreviewImporter
+Importing 'GUID: 74e3cf8cb145428458bf946fe5f5b318 - Path: Assets/Sprites/Menu/LEVELSELECTION_SHEET_PC_2.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 74e3cf8cb145428458bf946fe5f5b318' -> (Import Result ID: 'f2d5ca61d600cbffb8c18c794ee6d2c8') in 0.111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=822a9bf8841a846340cc8d4fc07c84c0 DependenciesID=0493e63fd692f5571c5e02ea89b46732 StaticDependenciesID=5dc354645ff8d5514d13a49fd2550284 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:34.2181813Z
+  Time since last request: 0.6741627 seconds.
+  importAddress: GUID: bb8dfcd263ad4eb383a33d74a720be6f - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd - Importer: PreviewImporter
+Importing 'GUID: bb8dfcd263ad4eb383a33d74a720be6f - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: bb8dfcd263ad4eb383a33d74a720be6f' -> (Import Result ID: '33183843342f252d05a9f8141faa8892') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82c1716f8088b1b98dbeb2ba8ab966bd DependenciesID=4152e5aaaa12a2ae720a8ca2911192f8 StaticDependenciesID=7a7de60f3fced34f63512c3cd7b4c4e0 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:37.2505375Z
+  Time since last request: 3.0232646 seconds.
+  importAddress: GUID: a7876b806281fce438e7013747bc6d15 - Path: Assets/Sprites/Effects/particles.png - Importer: PreviewImporter
+Importing 'GUID: a7876b806281fce438e7013747bc6d15 - Path: Assets/Sprites/Effects/particles.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: a7876b806281fce438e7013747bc6d15' -> (Import Result ID: '28999d95dc2bdc8d2f627789e57c25d2') in 0.127 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46be747898bb957dae746bcfec4343e8 DependenciesID=c4372c8dc8fb32d0df9cb90bf99687f6 StaticDependenciesID=b1856096316689b868b91fe1f5eb4b91 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:37.3787979Z
+  Time since last request: 0.0006823 seconds.
+  importAddress: GUID: d286fcb5d11c86e4aac2e79e50f86b90 - Path: Packages/com.unity.purchasing/Runtime/Purchasing/PaymentOption/Resources/com.unity.purchasing/Brands/StripeWhite.png - Importer: PreviewImporter
+Importing 'GUID: d286fcb5d11c86e4aac2e79e50f86b90 - Path: Packages/com.unity.purchasing/Runtime/Purchasing/PaymentOption/Resources/com.unity.purchasing/Brands/StripeWhite.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: d286fcb5d11c86e4aac2e79e50f86b90' -> (Import Result ID: 'be4e978b962c3dfb7efa335267994eb8') in 0.035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d3f69cb76353946a5df20322baabce11 DependenciesID=7a7497c7cb4dc788a37c9f8335855a7c StaticDependenciesID=d78a090098352e67debea0770c3cc524 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:37.455983Z
+  Time since last request: 0.0412065 seconds.
+  importAddress: GUID: 4ccf43d26c4748c792174516f4a8fcef - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png - Importer: PreviewImporter
+Importing 'GUID: 4ccf43d26c4748c792174516f4a8fcef - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 4ccf43d26c4748c792174516f4a8fcef' -> (Import Result ID: '508ba25efa767980afcd2512f56cd4de') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1c18423962b94b732ddb6505abafa525 DependenciesID=3cd1e3051777051251d6608223eb2b38 StaticDependenciesID=abb78ed73459ee4815357df0014bf27b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:37.4621712Z
+  Time since last request: 0.0002804 seconds.
+  importAddress: GUID: dd8fc457712a09b409b7badb31c0c7bd - Path: Assets/Sprites/Background/Themes/THEME_01_THEME_1_1.png - Importer: PreviewImporter
+Importing 'GUID: dd8fc457712a09b409b7badb31c0c7bd - Path: Assets/Sprites/Background/Themes/THEME_01_THEME_1_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: dd8fc457712a09b409b7badb31c0c7bd' -> (Import Result ID: 'd5a0a8820b5f1be66a63186c2cd2f6e7') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cc0caffd0b262d255221f1c33fb6fa64 DependenciesID=5519ca0d19df0b79777b842d7bd6bec1 StaticDependenciesID=d8e0cbb0e75211189284f86787fd8890 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:37.9105829Z
+  Time since last request: 0.4329967 seconds.
+  importAddress: GUID: 061b4260679f4874eadc2e89d802c965 - Path: Assets/Sprites/Background/Themes/THEME_02_THEME_2_1.png - Importer: PreviewImporter
+Importing 'GUID: 061b4260679f4874eadc2e89d802c965 - Path: Assets/Sprites/Background/Themes/THEME_02_THEME_2_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 061b4260679f4874eadc2e89d802c965' -> (Import Result ID: '53bcb9ebd23ed3222db81042c03d9440') in 0.043 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a8ab8111efa2eb64a32c67ba22cd2226 DependenciesID=30c6c0a91df5ca39a89b6493dcdb34ae StaticDependenciesID=9b955daa160be91ba73f68fff788afd8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:38.0868521Z
+  Time since last request: 0.1322939 seconds.
+  importAddress: GUID: 3ee32c18db4f5174584b18bf46ca9e23 - Path: Assets/Sprites/Background/Themes/THEME_05_PARALLAX_5_1.png - Importer: PreviewImporter
+Importing 'GUID: 3ee32c18db4f5174584b18bf46ca9e23 - Path: Assets/Sprites/Background/Themes/THEME_05_PARALLAX_5_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 3ee32c18db4f5174584b18bf46ca9e23' -> (Import Result ID: '622f4465ac3d3c235bc9ae3cc7278afc') in 0.060 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d3d3072b807b57f642a451c4a40040da DependenciesID=8ccf1becb667c00208a6606525ab9d23 StaticDependenciesID=2b4a3b856e3fae7954d86278b01508ec 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:38.8644462Z
+  Time since last request: 0.7168342 seconds.
+  importAddress: GUID: 08087dead03cb3343a1f3c1f1f2f7770 - Path: Assets/Sprites/Background/Themes/THEME_07_PARALLAX_7_1.png - Importer: PreviewImporter
+Importing 'GUID: 08087dead03cb3343a1f3c1f1f2f7770 - Path: Assets/Sprites/Background/Themes/THEME_07_PARALLAX_7_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 08087dead03cb3343a1f3c1f1f2f7770' -> (Import Result ID: '06062693436ae00ebc950713617abbee') in 0.218 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7c6ec83dd57f30cd76a4abad482c12d4 DependenciesID=8e2b91c206cea204e301876985e49051 StaticDependenciesID=0ba1216382c50c2df9457c18312cc7ad 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:39.3947894Z
+  Time since last request: 0.3117597 seconds.
+  importAddress: GUID: bcc1219a326197e428b44b5144d7993b - Path: Assets/Sprites/Background/Themes/THEME_12_PARALLAX_12_1.png - Importer: PreviewImporter
+Importing 'GUID: bcc1219a326197e428b44b5144d7993b - Path: Assets/Sprites/Background/Themes/THEME_12_PARALLAX_12_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: bcc1219a326197e428b44b5144d7993b' -> (Import Result ID: '74ca6923e955395573e64c763b673f96') in 0.030 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b97748e5e0cab9f5220b261de8ee487 DependenciesID=965b9f3085ca1cec6faa9e34001344b3 StaticDependenciesID=cfa69ace19a310d9c613599eb8826607 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:39.4621113Z
+  Time since last request: 0.0370693 seconds.
+  importAddress: GUID: 22aa88af90962784b92cf67eaaea25e8 - Path: Assets/Sprites/Background/Themes/THEME_15_PARALLAX_1_15_1.png - Importer: PreviewImporter
+Importing 'GUID: 22aa88af90962784b92cf67eaaea25e8 - Path: Assets/Sprites/Background/Themes/THEME_15_PARALLAX_1_15_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 22aa88af90962784b92cf67eaaea25e8' -> (Import Result ID: '5076754d84e1e73d6c8b6f228b3fb485') in 0.024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da06af573edc3bee5053fcd5155d4117 DependenciesID=1e510853401c3572282438b93928627b StaticDependenciesID=cc19c96b1441ff92d16bfc7be7479d72 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:39.9334369Z
+  Time since last request: 0.4468739 seconds.
+  importAddress: GUID: 8cb626c4e7f65ab4ba9d4dbcfbfefa6a - Path: Assets/Sprites/Background/Themes/THEME_16_PARALLAX_2_16_1.png - Importer: PreviewImporter
+Importing 'GUID: 8cb626c4e7f65ab4ba9d4dbcfbfefa6a - Path: Assets/Sprites/Background/Themes/THEME_16_PARALLAX_2_16_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 8cb626c4e7f65ab4ba9d4dbcfbfefa6a' -> (Import Result ID: '92d1e4faf744ebbf662a751819c1e995') in 0.024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01513e8b39902730d1de3ebb7b94d987 DependenciesID=c39dd251313b3b651bab4aecac190eed StaticDependenciesID=0653aa3162afdc2ad1e74fe51031f336 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:40.0621514Z
+  Time since last request: 0.1035829 seconds.
+  importAddress: GUID: 008043755b42f1a42b924aee308d7ef5 - Path: Assets/Sprites/Background/Themes/THEME_18_PARALLAX_2_18_1.png - Importer: PreviewImporter
+Importing 'GUID: 008043755b42f1a42b924aee308d7ef5 - Path: Assets/Sprites/Background/Themes/THEME_18_PARALLAX_2_18_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 008043755b42f1a42b924aee308d7ef5' -> (Import Result ID: '1377dc3860334f57dfc20b21d0d35e30') in 0.032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=43f10c7483dfbaf3da6a593c437a1bbb DependenciesID=112f26c82cbfd3ab7c757a2a7440bb9f StaticDependenciesID=2929569a83fc989f180c3aeddf7719d1 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:40.495332Z
+  Time since last request: 0.4003738 seconds.
+  importAddress: GUID: 3e40054683d2297419929351d03e3110 - Path: Assets/Sprites/Background/Themes/THEME_20_PARALLAX_3_20_1.png - Importer: PreviewImporter
+Importing 'GUID: 3e40054683d2297419929351d03e3110 - Path: Assets/Sprites/Background/Themes/THEME_20_PARALLAX_3_20_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 3e40054683d2297419929351d03e3110' -> (Import Result ID: 'b1d85f815ed8048245523101fb26563f') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=513cd40e4444eef0de99f7ad1624d499 DependenciesID=57cfc346a588925b075ce61b36488958 StaticDependenciesID=e3a347d4e6d9f479fbd068e11b8482c0 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:40.5141933Z
+  Time since last request: 0.0006162 seconds.
+  importAddress: GUID: e11c291b20e56a9448532b0af1089eaa - Path: Assets/Sprites/Background/Themes/THEME_20_THEME_20_GROUND_2_1.png - Importer: PreviewImporter
+Importing 'GUID: e11c291b20e56a9448532b0af1089eaa - Path: Assets/Sprites/Background/Themes/THEME_20_THEME_20_GROUND_2_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: e11c291b20e56a9448532b0af1089eaa' -> (Import Result ID: 'dff5fcb97eb34e1acfe0b2ae932db174') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e823515398e635c97843a97f89010dbf DependenciesID=5d57d592502194b3b4a5df8c9af04fa6 StaticDependenciesID=c71635f8257343db3bfcb646bfe9b099 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:40.6296927Z
+  Time since last request: 0.1019736 seconds.
+  importAddress: GUID: 80a4e0659b847ab4f8514a4d440f30cd - Path: Assets/Sprites/Background/Themes/THEME_21_PARALLAX_2_22_1.png - Importer: PreviewImporter
+Importing 'GUID: 80a4e0659b847ab4f8514a4d440f30cd - Path: Assets/Sprites/Background/Themes/THEME_21_PARALLAX_2_22_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 80a4e0659b847ab4f8514a4d440f30cd' -> (Import Result ID: 'e493f8e2ae28caf9432e17686a39db86') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64389d434d2f7805ad3c34a23b4bd7be DependenciesID=9668c09ec1bf383c93b4616788d131d2 StaticDependenciesID=3ad50e888bf48b6f907f08a4b50c0bea 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:40.7608952Z
+  Time since last request: 0.1166239 seconds.
+  importAddress: GUID: 015bc1e48ad5a1c45b56505543c2f43e - Path: Assets/Sprites/Background/Themes/THEME_23_PU_SCHOOL_BG_1.png - Importer: PreviewImporter
+Importing 'GUID: 015bc1e48ad5a1c45b56505543c2f43e - Path: Assets/Sprites/Background/Themes/THEME_23_PU_SCHOOL_BG_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 015bc1e48ad5a1c45b56505543c2f43e' -> (Import Result ID: 'dd540eaa6473c40160fc23cd1f08d211') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d5d486bd3142a4b064fe4a0504dd9a7 DependenciesID=14bb2760a581f62dde2eb53f6ce0c1f7 StaticDependenciesID=b77b2519ac2d5baf46fd169ebd75ca60 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.1665779Z
+  Time since last request: 0.3918106 seconds.
+  importAddress: GUID: 28dbfe44510b3574c8c550a44d2f51f8 - Path: Assets/Sprites/Background/Themes/THEME_BD7_THEME_BD7_1.png - Importer: PreviewImporter
+Importing 'GUID: 28dbfe44510b3574c8c550a44d2f51f8 - Path: Assets/Sprites/Background/Themes/THEME_BD7_THEME_BD7_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 28dbfe44510b3574c8c550a44d2f51f8' -> (Import Result ID: 'b940b0088e669e8d628d7071ed4591c0') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f7a0a577816703ca96b8ac2b3738d9a5 DependenciesID=8df9195b1cf59e7f17bdc6baee3c5591 StaticDependenciesID=673614906a9fc712231a54ea07ed1a06 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.2426225Z
+  Time since last request: 0.0664932 seconds.
+  importAddress: GUID: a0b81ab046cc595428aa98519c0246aa - Path: Assets/Sprites/Background/Themes/THEME_MIGHTYLEAGUE_EXTRA_PNG_1.png - Importer: PreviewImporter
+Importing 'GUID: a0b81ab046cc595428aa98519c0246aa - Path: Assets/Sprites/Background/Themes/THEME_MIGHTYLEAGUE_EXTRA_PNG_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: a0b81ab046cc595428aa98519c0246aa' -> (Import Result ID: 'f65e8061996de2356e5ae3f00b71947e') in 0.022 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=532fc6ce1175b8bba5b22049cff9279b DependenciesID=5012f460a5d4effcac026b529eb1fc7a StaticDependenciesID=19a6ad76e36695b7446c6320af1878a4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.7433041Z
+  Time since last request: 0.4777733 seconds.
+  importAddress: GUID: 341c8dafb33088f458d582dde555cbcb - Path: Assets/Sprites/Background/Themes/THEME_MOVIE_MOVIE_BACKGROUND2_1.png - Importer: PreviewImporter
+Importing 'GUID: 341c8dafb33088f458d582dde555cbcb - Path: Assets/Sprites/Background/Themes/THEME_MOVIE_MOVIE_BACKGROUND2_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 341c8dafb33088f458d582dde555cbcb' -> (Import Result ID: 'be13035d38bb4871e0711ffbb3cdb01d') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=624baac244154c93c51d9a2d8c96a492 DependenciesID=ab52c34d30dd35b33ff056016864138a StaticDependenciesID=b3f7951eb343c7031762109e4277fbdb 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.798151Z
+  Time since last request: 0.0378996 seconds.
+  importAddress: GUID: 4dae6afa447a2194c90c36eddfb98809 - Path: Assets/Sprites/Background/Themes/THEME_UGC_BACKGROUND_1.png - Importer: PreviewImporter
+Importing 'GUID: 4dae6afa447a2194c90c36eddfb98809 - Path: Assets/Sprites/Background/Themes/THEME_UGC_BACKGROUND_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 4dae6afa447a2194c90c36eddfb98809' -> (Import Result ID: '01ce7ea701f5b0d13bae414797e36f96') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ddd5e53bf70215b30646a9038fd36fb8 DependenciesID=acb14b199ccd8a583da76b436d3bd8d4 StaticDependenciesID=936fa4ac5ca4ef4036b4743936292e78 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.8076614Z
+  Time since last request: 0.0003334 seconds.
+  importAddress: GUID: aae192defb0a9f54d854099eb320ea25 - Path: Assets/Sprites/Background/Themes/THEME_UGC_MIDGROUND_2_1.png - Importer: PreviewImporter
+Importing 'GUID: aae192defb0a9f54d854099eb320ea25 - Path: Assets/Sprites/Background/Themes/THEME_UGC_MIDGROUND_2_1.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: aae192defb0a9f54d854099eb320ea25' -> (Import Result ID: '98063c5c952ed88c225ab65517493dca') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a4c4fb7ae3c5e3ffad00c5b781c56d0f DependenciesID=8c69457e54167df9ac8c3db96848c6fd StaticDependenciesID=c57cddee994a0f76704111949b57a5a0 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.9361029Z
+  Time since last request: 0.1168914 seconds.
+  importAddress: GUID: 55e457740fe60405dac77af143e1a867 - Path: Packages/com.unity.purchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png - Importer: PreviewImporter
+Importing 'GUID: 55e457740fe60405dac77af143e1a867 - Path: Packages/com.unity.purchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 55e457740fe60405dac77af143e1a867' -> (Import Result ID: 'd5d922118c77f9eb38bb229fa16e9bdf') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fcef245c7bf27644fa5414ad2c5c632f DependenciesID=5be78a773aefbeb10d91a15881b98400 StaticDependenciesID=3455dabf86191729d2b38ae8a9898d85 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:41.9429321Z
+  Time since last request: 0.000387 seconds.
+  importAddress: GUID: fed1ba06f53f4dab991477d48e1d670a - Path: Packages/com.unity.purchasing/Runtime/Purchasing/PaymentOption/Resources/com.unity.purchasing/Brands/Webshop.png - Importer: PreviewImporter
+Importing 'GUID: fed1ba06f53f4dab991477d48e1d670a - Path: Packages/com.unity.purchasing/Runtime/Purchasing/PaymentOption/Resources/com.unity.purchasing/Brands/Webshop.png - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: fed1ba06f53f4dab991477d48e1d670a' -> (Import Result ID: '77e3b424fd254ba692655bfec04a22a6') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d6a0d2a88c66e087387c3d75044d76df DependenciesID=c6897ff680bcf2e10e0eee01bb52d7b4 StaticDependenciesID=86cb9c208e4944d5665b3349a232a18b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-27T21:53:42.4713982Z
+  Time since last request: 0.5185142 seconds.
+  importAddress: GUID: 10c49fcd9c64421db7c0133e61e55f97 - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd - Importer: PreviewImporter
+Importing 'GUID: 10c49fcd9c64421db7c0133e61e55f97 - Path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 10c49fcd9c64421db7c0133e61e55f97' -> (Import Result ID: '8aa96c55729b6871d5c4001e610aa739') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05bc79942024256fdfdd5dd3334a5b83 DependenciesID=c641b5db8048f04c25dcd1858dac499a StaticDependenciesID=f83d8d310d09570d408a4a0652fe43fa 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 31.50 ms, found 5 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (83.8 KB). Loaded Objects now: 8754.
+Memory consumption went from 364.1 MB to 364.0 MB.
+Total: 19.703000 ms (FindLiveObjects: 0.910700 ms CreateObjectMapping: 0.127200 ms MarkObjects: 18.385300 ms  DeleteObjects: 0.111400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+EnvironmentDependencyValues requested are different than current active one (requested -> active):
+  graphicsApiMask: 2097156 -> 2359300
+Editor requested this worker to shutdown with reason: Editor is closing down
+AcceleratorClientConnectionCallback - disconnected - :0
+AssetImportWorker is now disconnected from the server
+Process exiting
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

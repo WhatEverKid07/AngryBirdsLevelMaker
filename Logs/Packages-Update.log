@@ -139,3 +139,13 @@ The following packages were updated:
 The following packages were removed:
   com.unity.textmeshpro@3.0.7
   com.unity.modules.vr@1.0.0
+
+=== Tue Oct 27 21:46:40 2026
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ai.navigation from version 2.0.14 to 2.0.16
+  com.unity.ide.rider from version 3.0.38 to 3.1.0
+  com.unity.multiplayer.center from version 2.0.1 to 2.1.0

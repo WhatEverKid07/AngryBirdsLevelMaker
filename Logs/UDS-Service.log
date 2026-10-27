@@ -1,7 +1,7 @@
 
 Server arguments:
   --memory-size 1073741824
-  --shared-postfix 2c83ec182546de17614455f38766e387
+  --shared-postfix d3d3d5f67f0d46ca4d5fd129c1995d4c
   --working-directory Library/DataStore
   --silent-console
   --shutdown-grace 0
@@ -13,7 +13,7 @@ Server arguments:
 
 Initialising UDS system complete:
   - System type: Service
-  - Resource namespace: 2c83ec182546de17614455f38766e387
+  - Resource namespace: d3d3d5f67f0d46ca4d5fd129c1995d4c
   - Shared memory size: 1073741824
   - Command buffer id: 1052576
   - Command buffer size: 8192
