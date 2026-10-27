@@ -38,7 +38,7 @@ public class Pig : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        velocityBeforePhysicsUpdate = rb.velocity;
+        velocityBeforePhysicsUpdate = rb.linearVelocity;
     }
 
     private void Awake()
@@ -71,24 +71,24 @@ public class Pig : MonoBehaviour
             float damage = 0;
             if(col.gameObject.tag == "Pig")
             {
-                if (col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude < 1)
+                if (col.gameObject.GetComponent<Rigidbody2D>().linearVelocity.magnitude < 1)
                 {
                     damage = velocityBeforePhysicsUpdate.magnitude * 8;
                 }
                 else
                 {
-                    damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 8;
+                    damage = col.gameObject.GetComponent<Rigidbody2D>().linearVelocity.magnitude * 8;
                 }
             }
             else if (col.gameObject.tag == "Brick")
             {
-                if(col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude < 1)
+                if(col.gameObject.GetComponent<Rigidbody2D>().linearVelocity.magnitude < 1)
                 {
                     damage = velocityBeforePhysicsUpdate.magnitude * 8;
                 }
                 else
                 {
-                    damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 8;
+                    damage = col.gameObject.GetComponent<Rigidbody2D>().linearVelocity.magnitude * 8;
                 }
             }
             else if (col.gameObject.tag == "Ground")

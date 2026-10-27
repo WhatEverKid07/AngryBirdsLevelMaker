@@ -133,13 +133,13 @@ public class InGameMenu : MonoBehaviour
     private void changeState()
     {
         menuSound(1);
-        if (defaultState.active == true)
+        if (defaultState.activeSelf)
         {
             defaultState.SetActive(false);
             scoreState.SetActive(false);
             openState.SetActive(true);
         }
-        else if(openState.active == true)
+        else if(openState.activeSelf)
         {
             openState.SetActive(false);
             scoreState.SetActive(true);

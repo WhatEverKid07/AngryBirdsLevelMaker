@@ -41,7 +41,7 @@ public class Brick : MonoBehaviour
 
     private void FixedUpdate()
     {
-        velocityBeforePhysicsUpdate = rb.velocity;
+        velocityBeforePhysicsUpdate = rb.linearVelocity;
     }
 
     private void Update()
@@ -133,46 +133,46 @@ public class Brick : MonoBehaviour
 
             if (col.gameObject.GetComponent<Bird>().birdType == 1 && materialType == 0)
             {
-                damage = colRB.velocity.magnitude * 5 * 2;
+                damage = colRB.linearVelocity.magnitude * 5 * 2;
             }
 
             // check if rock 
             else if (materialType == 2)
             {
-                damage = colRB.velocity.magnitude * 5;
+                damage = colRB.linearVelocity.magnitude * 5;
                 damage = damage / 6;
             }
             // check chuck and glass
             else if (col.gameObject.GetComponent<Bird>().birdType == 1 && materialType == 1)
             {
-                damage = colRB.velocity.magnitude * 5 * 2;
+                damage = colRB.linearVelocity.magnitude * 5 * 2;
                 damage = damage / 3;
             }
 
             // check blues and glass
             else if(col.gameObject.GetComponent<Bird>().birdType == 2 && materialType == 1)
             {
-                damage = colRB.velocity.magnitude * 5 * 2;
+                damage = colRB.linearVelocity.magnitude * 5 * 2;
             }
             // /2 damage for blues on glass
             else if (col.gameObject.GetComponent<Bird>().birdType == 2 && materialType == 0)
             {
-                damage = colRB.velocity.magnitude * 5 / 2;
+                damage = colRB.linearVelocity.magnitude * 5 / 2;
             }
             else
             {
-                damage = colRB.velocity.magnitude * 5;
+                damage = colRB.linearVelocity.magnitude * 5;
             }
 
             // slow chuck on glass
             if(materialType == 0 || materialType == 2 && col.gameObject.GetComponent<Bird>().birdType == 1)
             {
-                colRB.velocity = new Vector2(colRB.velocity.x / 2, colRB.velocity.y / 2);
+                colRB.linearVelocity = new Vector2(colRB.linearVelocity.x / 2, colRB.linearVelocity.y / 2);
             }
         }
         else if(col.gameObject.tag != "Ground")
         {
-            damage = colRB.velocity.magnitude * 5;
+            damage = colRB.linearVelocity.magnitude * 5;
         }
 
         if (col.gameObject.tag == "Pig")

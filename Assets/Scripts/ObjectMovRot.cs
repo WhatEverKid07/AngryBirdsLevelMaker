@@ -8,6 +8,7 @@ public class ObjectMovRot : MonoBehaviour
     private Vector3 offset;
     [HideInInspector] internal bool isPlacing = false;
     [SerializeField] internal bool canMove = true;
+    //[SerializeField] private float gridSize = 0.2f;
     
     [Header("Rotation Settings")]
     [SerializeField] private bool snapRotation = true;
@@ -35,6 +36,11 @@ public class ObjectMovRot : MonoBehaviour
             Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseWorld.z = transform.position.z;
             transform.position = mouseWorld + offset;
+
+            //Vector3 targetPos = mouseWorld + offset;
+            //targetPos.x = Mathf.Round(targetPos.x / gridSize) * gridSize;
+            //targetPos.y = Mathf.Round(targetPos.y / gridSize) * gridSize;
+            //transform.position = targetPos;
 
             if (Input.GetMouseButtonUp(0))
             {

@@ -22,7 +22,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float minZoom;
     [SerializeField] private float maxZoom;
     [SerializeField] private float zoom;
-    
 
     private Vector3 dragOrigin;
 
@@ -51,11 +50,13 @@ public class CameraController : MonoBehaviour
                 transform.position.z
             );
         }
-        
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        zoom -= scroll * zoomSpeed;
-        zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
-        cam.orthographicSize = zoom;
+
+        // Zoom settings. Not fully working, the zoom works but when moving the camera the clamp moves with the zoom. Need to fix that.
+
+        //float scroll = Input.GetAxis("Mouse ScrollWheel");
+        //zoom -= scroll * zoomSpeed;
+        //zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
+        //cam.orthographicSize = zoom;
         //cam.orthographicSize = Mathf.SmoothDamp(zoom, ref zoomSpeed);
     }
 }

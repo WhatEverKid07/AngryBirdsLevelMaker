@@ -37,7 +37,7 @@ public class MenuBirdSpawn : MonoBehaviour
         {
             rand = Random.Range(0.15f, 0.45f);
             birds.Add(Instantiate(birdPrefabs[Random.Range(0, 6)], gameObject.transform.position, new Quaternion(0, 0, 0, 0)) as GameObject);
-            birds[birdIndex].GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(3, 30), Random.Range(7, 15));
+            birds[birdIndex].GetComponent<Rigidbody2D>().linearVelocity = new Vector2(Random.Range(3, 30), Random.Range(7, 15));
             birds[birdIndex].transform.localScale = new Vector3(rand, rand, rand);
             birdIndex++;
 

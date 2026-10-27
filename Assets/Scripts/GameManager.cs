@@ -418,7 +418,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (var item in Bricks.Union(Birds).Union(Pigs))
         {
-            if (item != null && item.GetComponent<Rigidbody2D>().velocity.sqrMagnitude > Constants.MinVelocity)
+            if (item != null && item.GetComponent<Rigidbody2D>().linearVelocity.sqrMagnitude > Constants.MinVelocity)
             {
                 return false;
             }

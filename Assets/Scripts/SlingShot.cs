@@ -239,7 +239,7 @@ public class SlingShot : MonoBehaviour
         Vector3 velocity = SlingshotMiddleVector - BirdToThrow.transform.position;
         BirdToThrow.GetComponent<Bird>().OnThrow();
 
-        BirdToThrow.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x, velocity.y) * ThrowSpeed * distance;
+        BirdToThrow.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(velocity.x, velocity.y) * ThrowSpeed * distance;
 
         GameManager.birdsNumber = GameManager.birdsNumber - 1;
 
