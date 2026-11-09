@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Level Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: "Charis SIL", serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            header h1 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            header p {
+                font-size: 1rem;
+                color: #555;
+            }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+            section h2 {
+                font-size: 1.4rem;
+                margin-bottom: 2%;
+            }
+
+            section p {
+                margin-bottom: 20px;
+            }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Links */
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: red;
+            }
+
+        /* Custom Classes */
+        .thick-underline {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Angry Bird Level Maker</h1>
+        <p>A solo project to create a simple easy to use Angry Birds custom level maker.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>This is a solo project I developed using Unity, inspired by my interest in Super Mario Maker 2 and Angry Birds. The goal was to create a custom level editor that allows players to build, save, test and share their own Angry Birds levels.
+        </p>
+        </section>
+
+        <section>
+            <h2>Process</h2>
+            <p>
+                <span class="thick-underline">Art/Visuals:</span> I started with an existing Angry Birds port for Unity found on GitHub, which provided the original looking assets, physics, and core gameplay mechanics. With any further delevopments I plan to stick to this original style and personally it's my favourite.
+            </p>
+            <p>
+                <span class="thick-underline">Code:</span> The project was developed using C# in Unity. One of the biggest challenges was creating the save system, which took considerable time to get working correctly. I had to work out how to store the objects placed within a level and then recreate them when loading a saved level. Alongside this, I implemented the object placement, navigation, and build and test modes.
+            </p>
+        </section>
+
+        <section>
+            <h2>More</h2>
+            <p>Feel free to check out my <a href="https://eugeniocl.carrd.co" target="_blank">online business card</a> to learn more about this, and other projects.</p>
+        </section>
+    </main>
+</body>
+</html>
